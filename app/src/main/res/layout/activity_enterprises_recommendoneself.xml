@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.cgjl_activity.EnterprisesRecommendoneselfActivity"
+    android:orientation="vertical"
+    android:focusableInTouchMode="false"
+    android:fitsSystemWindows="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:id="@+id/relative_top">
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/point_back"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页面标题"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/txt_size_seventeen"
+            android:textColor="@color/txt_color_day"
+            android:paddingTop="10dp"
+            />
+    </RelativeLayout>
+    <include layout="@layout/enterprise"></include>
+
+</LinearLayout>

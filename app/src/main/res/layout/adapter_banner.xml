@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <!--Banner 2/3屏用的-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/relative"-->
+        <!--android:layout_width="295dp"-->
+        <!--android:layout_height="186dp"-->
+        <!--android:layout_centerInParent="true"-->
+
+        <!-->-->
+        <!--<ImageView-->
+            <!--android:id="@+id/banner_img"-->
+            <!--android:layout_width="292dp"-->
+            <!--android:layout_height="160dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@color/subscribe_item_disabled_bg_day"-->
+
+            <!--/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="253dp"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_alignTop="@id/banner_img"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="#20000000"-->
+            <!--android:visibility="gone"-->
+
+            <!-->-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/banner_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:textSize="@dimen/txt_size_thirteen" />-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/banner_time"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="2小时前"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/txt_size_nine"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/white"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginBottom="8dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+        <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+
+
+
+    <!--Banner 全屏用的-->
+    <RelativeLayout
+    android:id="@+id/relative"
+    android:layout_width="300dp"
+    android:layout_height="186dp"
+    android:layout_centerInParent="true"
+
+    >
+    <ImageView
+    android:id="@+id/banner_img"
+    android:layout_width="match_parent"
+    android:layout_height="186dp"
+    android:layout_centerInParent="true"
+    android:background="@color/subscribe_item_disabled_bg_day"
+
+    />
+
+    <RelativeLayout
+    android:layout_width="253dp"
+    android:layout_height="48dp"
+    android:layout_alignTop="@id/banner_img"
+    android:layout_centerHorizontal="true"
+    android:background="#20000000"
+    android:visibility="gone"
+
+    >
+
+    <TextView
+    android:id="@+id/banner_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:textSize="@dimen/txt_size_thirteen" />
+    <!--<TextView-->
+    <!--android:id="@+id/banner_time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="2小时前"-->
+    <!--android:textSize="@dimen/txt_size_nine"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--/>-->
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+
+1.手机号存储：                                phoneNum
+2.个人中心简介：                              jianJie
+3.个人中心用户名：                            userName
+4.个人兴趣标签：                              strand_id
+5.个人设置（wifi加载图片开关）：              wifiPhoto
+6.个人设置（wifi自动播放视频开关）：          wifiVideo
+7.个人设置（推送消息开关）:                   tuiSong
+8.判断用户是否登录：                          isLogin
+9.搜索的字段                                  searchString
+10.账号标识                                   app_token
+11.是否是智库号                               jmi_type
+12.是否是第一次登陆（显示引导页）             isFirstOpens
+13.当前版本是否提示用户更新                   updatePoint
+

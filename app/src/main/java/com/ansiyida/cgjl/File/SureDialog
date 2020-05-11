@@ -1,0 +1,38 @@
+  /**
+     * 确认取消弹框
+     */
+    private PopupWindow popupWindow_sure;
+    private View contentView_sure;
+
+    private void initPopuWindow_sure() {
+        final Activity activity = getActivity();
+        if (popupWindow_sure == null) {
+            LayoutInflater mLayoutInflater = LayoutInflater.from(activity);
+            contentView_sure = mLayoutInflater.inflate(R.layout.popwindow_sure, null);
+            popupWindow_sure = new PopupWindow(contentView_sure, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        }
+            TextView tv_text= (TextView) contentView_sure.findViewById(R.id.tv_text);           //1.弹框的内容
+            TextView tv_cancel= (TextView) contentView_sure.findViewById(R.id.tv_cancel);       //2.取消按钮
+            TextView tv_sure= (TextView) contentView_sure.findViewById(R.id.tv_sure);           //3.确认按钮
+
+        //产生背景变暗效果
+//        ColorDrawable cd = new ColorDrawable(0x000000);
+//        popupWindow1.setBackgroundDrawable(cd);
+//        cd.setCallback(null);
+        WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
+        lp.alpha = 0.4f;
+        activity.getWindow().setAttributes(lp);
+        popupWindow_sure.setBackgroundDrawable(new BitmapDrawable());
+        popupWindow_sure.setOutsideTouchable(true);
+        popupWindow_sure.setFocusable(true);
+        popupWindow_sure.showAtLocation(contentView_sure, Gravity.CENTER, 0, 0);
+        popupWindow_sure.update();
+        popupWindow_sure.setOnDismissListener(new PopupWindow.OnDismissListener() {
+            @Override
+            public void onDismiss() {
+                WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
+                lp.alpha = 1f;
+                activity.getWindow().setAttributes(lp);
+            }
+        });
+    }

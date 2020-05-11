@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relative_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_in"
+            android:layout_width="341dp"
+            android:layout_height="164dp"
+            android:background="@drawable/shape_zhiku_back"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+
+            >
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_cha"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/text_popWindow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="移动端智库号的认证暂未开通，请使用电脑浏览器访问www.jisuanweilai.com.cn完成认证"
+                android:textColor="@color/txt_color_day"
+                android:textSize="@dimen/txt_size_fourteen"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="32dp"
+                />
+            <Button
+                android:id="@+id/btn_copy"
+                android:layout_width="116dp"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="111dp"
+                android:text="拨号"
+                android:textSize="@dimen/txt_size_thirteen"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_bg_pic_num"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

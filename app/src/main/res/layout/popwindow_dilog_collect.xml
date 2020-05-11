@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_in"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_zhiku_back">
+
+
+
+
+            <TextView
+                android:id="@+id/txt_number"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="该项目已设置提醒，确认取消收藏?"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/txt_size_sixteen"
+                android:padding="20dp"
+                 />
+
+
+
+            <TextView
+                android:id="@+id/grid_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="90dp"
+                android:background="@color/subscribe_item_disabled_bg_day"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/grid_line"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_copy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="确认" />
+
+                <TextView
+                    android:id="@+id/tv_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@id/btn_sure"
+                    android:background="@color/subscribe_item_disabled_bg_day" />
+
+                <TextView
+                    android:id="@+id/iv_close"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="取消" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingVertical="15dp">
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/study_backImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/study_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="全国招标师职业水平考试大纲 (2015)"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/start_study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="78dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="开始学习"
+            android:textSize="14sp"
+            android:background="@drawable/shape_study"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="14dp"
+            android:paddingLeft="14dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

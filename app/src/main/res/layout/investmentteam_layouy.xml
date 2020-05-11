@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/lrb_shadow">
+        <ImageView
+            android:id="@+id/investment_team_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_toRightOf="@id/investment_team_image"
+            android:id="@+id/investment_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_fourteen"
+            />
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/investment_team_image"
+            android:layout_below="@id/investment_name"
+            android:id="@+id/investment_team_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </RelativeLayout>
+</RelativeLayout>

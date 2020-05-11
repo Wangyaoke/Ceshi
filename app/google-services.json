@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "165192403523",
+    "firebase_url": "https://qkdj-585ef.firebaseio.com",
+    "project_id": "qkdj-585ef",
+    "storage_bucket": "qkdj-585ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165192403523:android:d4fc2dcd0f753349",
+        "android_client_info": {
+          "package_name": "com.ansiyida.cgjl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165192403523-pfu15jc39o52m7tuj954gq7dsqnhd9rm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQsx62hM9o2iyudqDUMDt0zxxgQNsE69A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165192403523-pfu15jc39o52m7tuj954gq7dsqnhd9rm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "165192403523-8ahd42pg50ot73taegj9im9aneqmkhet.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.calcnext.caigoujingling"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

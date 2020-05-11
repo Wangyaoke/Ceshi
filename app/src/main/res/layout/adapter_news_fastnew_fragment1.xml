@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/line_color"-->
+        <!--/>-->
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:paddingLeft="14dp"
+
+        android:background="@mipmap/bg_fastnew"
+        >
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="快报"
+            android:textStyle="italic|bold"
+            android:textColor="?attr/tab_2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:layout_marginRight="15dp"
+            />
+        <com.ansiyida.cgjl.view.marquee.MarqueeView
+            android:id="@+id/mv_bar1"
+            android:layout_centerVertical="true"
+            app:mvAnimDuration="1000"
+            app:mvInterval="3000"
+            app:mvTextColor="?attr/txt_color"
+            app:mvTextSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/txt1"
+
+            />
+    </RelativeLayout>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/line_color"-->
+        <!--android:layout_below="@id/relative"-->
+        <!--android:layout_marginTop="-1dp"-->
+        <!--/>-->
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_white_10">
+    <TextView
+        android:id="@+id/ly_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="专业领域"
+        android:textSize="@dimen/txt_size_fourteen"
+        android:textColor="#FF363636"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.ansiyida.cgjl.view.cgjl_view.FloatLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ly_text"
+        android:id="@+id/MyFloatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.ansiyida.cgjl.view.cgjl_view.FloatLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/MyFloatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/qx_btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="取消"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/purchase_result"
+            />
+        <Button
+            android:id="@+id/qd_btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="确定"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/purchase_sure" />
+    </LinearLayout>
+</RelativeLayout>

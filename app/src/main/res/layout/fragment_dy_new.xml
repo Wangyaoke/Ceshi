@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingTop="15dp">
+    <include
+        android:id="@+id/relative"
+        layout="@layout/dy_top" />
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_below="@id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:layout_below="@id/relative"
+        android:background="@color/line_color"
+        android:id="@+id/line_dy" />
+
+    <android.support.design.widget.TabLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/relative"
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabIndicatorColor="@color/area_btn_textcolor"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/area_btn_textcolor"
+
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#DFDFDF"
+        android:visibility="gone"/>
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/xrefreshView_dyNewFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_dyNewFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.andview.refreshview.XRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/relative_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/no_dy" />
+
+        <TextView
+            android:id="@+id/tv_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="@string/dy_empty"
+            android:textColor="#999999"
+            android:textSize="@dimen/txt_size_fourteen" />
+
+        <Button
+            android:id="@+id/btn_dy"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="96dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/tv_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_btn_setting_click"
+            android:text="@string/dy_dying"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_thirteen"
+            />
+
+        <ImageView
+            android:id="@+id/iv_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"
+            android:src="@mipmap/icon_repeat"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

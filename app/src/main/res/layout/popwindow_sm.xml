@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/relative_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/relative_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/relative_view"
+            android:orientation="vertical"
+            android:background="@drawable/shape_popwindow_sure"
+            android:paddingHorizontal="10dp"
+            >
+            <ImageView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+
+                android:layout_gravity="right"
+                android:src="@mipmap/icon_cha" />
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:layout_below="@+id/relative_view"
+
+            android:orientation="vertical"
+
+            >
+            <TextView
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对接请到全军武器装备采购信息网"
+            android:textColor="@color/gray_dan"
+                android:maxLines="1"
+            android:textSize="14sp"
+
+              />
+            <TextView
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://www.weain.mil.cn/fwzn/xccxlc/"
+                android:textColor="@color/text_blue"
+                android:textSize="14sp"
+                android:maxLines="1"
+
+
+                />
+            <TextView
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看详细对接步骤。"
+                android:textColor="@color/gray_dan"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+
+                />
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="复制链接"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_box_btn"
+                android:textColor="@color/white"
+                 android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

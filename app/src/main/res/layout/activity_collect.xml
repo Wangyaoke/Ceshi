@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/subscribe_item_disabled_bg_day"
+    tools:context=".activity.HistoryActivity"
+    android:paddingTop="5dp">
+    <include
+        layout="@layout/second_view_top2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#fff"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/F8F8F8"></View>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/white">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <RadioButton
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/rb1_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="公告"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@drawable/select_color_fans"
+                android:background="@drawable/select_rb_fans" />
+            <RadioButton
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/rb2_law"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="文章"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@drawable/select_color_fans"
+                android:background="@drawable/select_rb_fans"
+                />
+
+            <RadioButton
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/rb_knowledge"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/select_rb_fans"
+                android:button="@null"
+                android:gravity="center"
+                android:text="学院"
+                android:textColor="@drawable/select_color_fans"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/rb3_classified_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/select_rb_fans"
+                android:button="@null"
+                android:gravity="center"
+                android:text="涉密采购"
+                android:textColor="@drawable/select_color_fans"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/rb4_buy_demand"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/select_rb_fans"
+                android:button="@null"
+                android:drawableRight="@mipmap/collect_down"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="采购需求"
+                android:textColor="@drawable/select_color_fans"
+                android:textSize="16sp" />
+        </RadioGroup>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/collet_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

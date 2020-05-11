@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.HistoryActivity"
+    android:paddingTop="5dp">
+
+    <include layout="@layout/second_view_top2" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        >
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RadioButton
+                android:id="@+id/rb1_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/select_rb_fans"
+                android:button="@null"
+                android:gravity="center"
+                android:text="全部"
+                android:layout_weight="1"
+                android:textColor="@drawable/select_color_fans"
+                android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/rb2_law"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="未对接"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@drawable/select_color_fans"
+                android:background="@drawable/select_rb_fans"
+                />
+            <RadioButton
+                android:id="@+id/rb3_classified_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="已对接"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@drawable/select_color_fans"
+                android:background="@drawable/select_rb_fans"
+                />
+
+
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_careFansActivity"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

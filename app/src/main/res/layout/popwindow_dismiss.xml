@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_child"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_zhiku_back">
+
+            <TextView
+                android:id="@+id/tv_choiceCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:text="已选2个理由"
+                android:textColor="@color/back_dark"
+                android:textSize="@dimen/txt_size_sixteen"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="选择原因精准原因精准屏蔽"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/txt_size_sixteen"
+                android:visibility="gone" />
+
+            <GridLayout
+                android:id="@+id/GridLayout_neirong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="24dp"
+                android:columnCount="2"
+
+
+                >
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="90dp"
+                    android:layout_height="34dp"
+
+                    android:background="@drawable/shape_bug_black_bt"
+                    android:button="@null"
+                    android:gravity="center"
+
+                    android:text="题文不符"
+                    android:textColor="@drawable/select_txt_color" />
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="90dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/shape_bug_black_bt"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="原文链接失败"
+                    android:textColor="@drawable/select_txt_color"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="135dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/select_color_dismiss"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="来源：联合早报"
+                    android:textColor="@drawable/select_txt_color"
+
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="135dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/select_color_dismiss"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="内容太水"
+                    android:textColor="@drawable/select_txt_color"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="135dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/select_color_dismiss"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="重复推荐"
+                    android:textColor="@drawable/select_txt_color"
+
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/cb6"
+                    android:layout_width="135dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/select_color_dismiss"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="不想看：选美"
+                    android:textColor="@drawable/select_txt_color"
+                    android:visibility="gone" />
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/grid_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="90dp"
+                android:background="@color/subscribe_item_disabled_bg_day"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/grid_line"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_sure"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="提交" />
+
+                <TextView
+                    android:id="@+id/tv_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@id/btn_sure"
+                    android:background="@color/subscribe_item_disabled_bg_day" />
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="取消" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

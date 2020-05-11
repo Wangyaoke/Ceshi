@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--左边 时间-->
+    <TextView
+        android:layout_marginTop="-5dp"
+        android:id="@+id/tv_time"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:text=""
+        android:textColor="#666666"
+        android:textSize="@dimen/txt_size_fourteen"
+    />
+    <!--中间 时间轴-->
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="35dp"
+        android:layout_height="50dp">
+        <ImageView
+
+            android:id="@+id/iv_status"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_status"
+            android:layout_centerInParent="true"
+            android:src="#ECD53D" />
+    </RelativeLayout>
+    <!--右边 信息-->
+    <TextView
+        android:layout_marginTop="-5dp"
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rl_left"
+        android:textColor="#666666"
+        android:text=""
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="@dimen/txt_size_thirteen"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_time"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/rl_left"
+        android:background="#9b9b9b"
+        android:visibility="gone" />
+</LinearLayout>

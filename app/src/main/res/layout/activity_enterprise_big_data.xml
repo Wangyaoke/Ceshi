@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.cgjl_activity.EnterpriseBigDataActivity"
+    android:background="@color/white"
+    android:paddingTop="15dp">
+    <RelativeLayout
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/relative_dy"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/point_back"
+                android:layout_gravity="center"
+                android:paddingHorizontal="5dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/txt_size_sixteen"
+            android:textColor="@color/txt_color_day"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/relative_dy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <include layout="@layout/enterprise_bigdata_include"></include>
+    </ScrollView>
+
+</RelativeLayout>

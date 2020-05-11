@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/xrefreshView_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginRight="15dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.andview.refreshview.XRefreshView>
+</LinearLayout>
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_txt_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂时没有记录"
+        android:textColor="@color/gray_dan"
+        android:textSize="@dimen/txt_size_fifteen"
+        android:layout_below="@id/iv_empty"
+        android:layout_marginTop="47dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/iv_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_repeat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

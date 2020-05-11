@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#fff">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F8F9FB" />
+    <RelativeLayout
+        android:id="@+id/ShowOrHideRel"
+        android:layout_below="@id/view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/time"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="2115-45-45"/>
+        <ImageView
+            android:id="@+id/ShowOrHideImg"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/ShowOrHideText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/ShowOrHideImg"
+            android:gravity="center"
+            android:text="展开"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/purchaseinfo_recycler"
+        android:layout_below="@id/ShowOrHideRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

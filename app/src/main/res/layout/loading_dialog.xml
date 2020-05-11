@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@mipmap/common_loading_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <!--<ProgressBar-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:indeterminate="false"-->
+        <!--android:indeterminateDrawable="@drawable/animation_list_loading"-->
+        <!--/>-->
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/loading_dailog_progress" />
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="加 载 中..."
+        android:textColor="#fff"
+        android:textSize="@dimen/txt_size_fifteen" />
+
+</LinearLayout>

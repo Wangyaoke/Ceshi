@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.cgjl_fragment.ChartFragment">
+    <RelativeLayout
+        android:id="@+id/ChartRel"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+        <com.ansiyida.cgjl.view.cgjl_view.ChartView
+            android:layout_marginLeft="-70dp"
+            android:id="@+id/chartview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:bgcolor="#ffffff"
+            app:interval="100dp"
+            app:isScroll="false"
+            app:linecolor="#4A9FF0"
+            app:xylinecolor="#e2e2e2"
+            app:xylinewidth="1dp"
+            app:xytextcolor="#7e7e7e"
+            app:xytextsize="10sp" />
+    </RelativeLayout>
+
+</FrameLayout>

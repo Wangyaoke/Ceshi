@@ -1,0 +1,5 @@
+1.基本使用：                  Glide.with(this).load(touXiangUrl).into(image_touxiang);
+2.显示图片是圆形：            Glide.with(this).load(touXiangUrl).placeholder(Constant.default_touXiang).transform(new GlideCircleTransform(this)).into(image_touxiang);
+3.显示图片填充ImageView:      Glide.with(context).load(touXiangUrl).centerCrop().into(viewHolder.onePic_pic_fragment1);
+4.使用默认图片                Glide.with(this).load(touXiangUrl).placeholder(R.mipmap.ic_launcher).into(image_touxiang);
+5.禁止内存缓存                Glide.with(this).load(touXiangUrl).skipMemoryCache(true).placeholder(R.mipmap.ic_launcher).into(image_touxiang);

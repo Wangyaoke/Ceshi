@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="125dp">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:background="@mipmap/public_bg"
+        android:layout_height="130dp">
+        <RelativeLayout
+            android:id="@+id/point1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="32dp">
+            <TextView
+                android:id="@+id/iv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxEms="4"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="定位中..."
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_fourteen" />
+            <ImageView
+                android:layout_marginLeft="2dp"
+                android:id="@+id/point_1"
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:tint="@color/white"
+                android:src="@mipmap/point_down"
+                android:layout_toRightOf="@id/iv_1"
+                />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@mipmap/title_cg"
+                />
+            <RelativeLayout
+                android:id="@+id/relative_search_bg"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/point_1"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@mipmap/search_top_bg"/>
+                <TextView
+                    android:id="@+id/tv_hotText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:maxLines="1"
+                    android:layout_centerVertical="true"
+                    android:text="输入关键字,如采购业,多个词用空格隔开"
+                    android:textColor="#9b9d9d"
+                    android:textSize="@dimen/txt_size_twelve" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/todaycount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/point1"
+            android:layout_centerHorizontal="true"
+            android:maxLength="14"
+            android:text="今天新增0条信息"
+            android:textColor="#eeeeee"
+            android:textSize="@dimen/txt_size_ten"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

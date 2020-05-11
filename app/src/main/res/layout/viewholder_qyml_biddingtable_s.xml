@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:id="@+id/qyml_table_top"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:id="@+id/table_yz"
+            android:text="项目信息"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:textColor="@color/txt_color_dark"
+            android:background="@drawable/shape_table_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/table_project"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="相关机构"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:background="@drawable/shape_table_content"
+            android:textColor="@color/txt_color_dark"
+            />
+        <TextView
+            android:id="@+id/table_result"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="相关单位"
+            android:gravity="center"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:textColor="@color/txt_color_dark"
+            android:background="@drawable/shape_table_content"
+            />
+        <TextView
+            android:id="@+id/table_money"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="金额"
+            android:gravity="center"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:textColor="@color/txt_color_dark"
+            android:background="@drawable/shape_table_content"
+            android:visibility="gone"
+            />
+
+
+
+
+</LinearLayout>

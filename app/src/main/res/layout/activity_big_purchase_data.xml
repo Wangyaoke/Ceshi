@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.cgjl_activity.PurchaseBigDataActivity"
+    android:paddingTop="15dp">
+    <LinearLayout
+       android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/relative_dy"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/point_back"
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <RadioButton
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:button="@null"
+                android:drawablePadding="3dp"
+                android:text="采购大数据"
+                android:textSize="@dimen/txt_size_sixteen"
+                android:textColor="#333333"
+                android:layout_centerHorizontal="true"
+                android:drawableTint="#333333"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/relative_dy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <include layout="@layout/purchase_bigdata_include"></include>
+    </ScrollView>
+</RelativeLayout>

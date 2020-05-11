@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    >
+
+    <include layout="@layout/second_view_top2" />
+      <TextView
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="#F8F9FB"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="1.只开具普通增值税纸质发票，快递费用到付需自行承担。"
+            android:textSize="@dimen/txt_size_sixteen"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:textColor="#999999"
+            android:textColorHint="@color/text_black"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="2.发票内容统一为技术/咨询/信息服务费；"
+        android:textSize="@dimen/txt_size_sixteen"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="5dp"
+        android:textColor="#999999"
+        android:textColorHint="@color/text_black"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="3.请在订单支付后15天内申请开票，逾期不再开具对应订单的发票；"
+        android:textSize="@dimen/txt_size_sixteen"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="5dp"
+        android:textColor="#999999"
+        android:textColorHint="@color/text_black"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="4.每月10号到25号之前为开具发票时间，请合理安排发票申请时间。"
+        android:textSize="@dimen/txt_size_sixteen"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="5dp"
+        android:textColor="#999999"
+        android:textColorHint="@color/text_black"/>
+
+</LinearLayout>

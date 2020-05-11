@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/line_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/title_pic_fragment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="3dp"
+                    android:maxLines="1"
+                    android:text="精灵智库"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/txt_size_sixteen" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看更多"
+                    android:id="@+id/more"
+                    android:paddingHorizontal="2dp"
+                    android:textSize="@dimen/txt_size_ten"
+                    android:textColor="@color/tab_1_day"
+                    />
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+          </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+
+        android:background="@color/line_color" />
+
+</LinearLayout>

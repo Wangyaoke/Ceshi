@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/relative_fragment_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <RadioGroup
+            android:id="@+id/icon_mainAcitivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+
+            >
+            <RadioButton
+                android:id="@+id/icon1_mainAcitivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@mipmap/icon71"
+                android:textColor="@color/tab_1_day"
+                android:gravity="center|bottom"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/txt_size_twelve"
+                android:background="#00000000"
+                android:text="公开招标"
+                android:paddingTop="5dp"
+                />
+            <RadioButton
+                android:id="@+id/icon2_mainAcitivity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@mipmap/cgxq_1"
+                android:textColor="@color/tab_1_day"
+                android:gravity="center|bottom"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/txt_size_twelve"
+                android:background="#00000000"
+                android:text="采购需求"
+                android:paddingTop="5dp"
+                />
+
+            <RadioButton
+                android:id="@+id/icon3_mainAcitivity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:textColor="@color/tab_1_day"
+                android:paddingBottom="5dp"
+                android:background="#00000000"
+                android:drawableTop="@mipmap/smcg_1"
+                android:textSize="@dimen/txt_size_twelve"
+                android:gravity="center|bottom"
+                android:text="涉密采购"
+                android:paddingTop="5dp"
+                />
+            <RadioButton
+                android:id="@+id/icon4_mainAcitivity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:textColor="@color/tab_1_day"
+                android:paddingBottom="5dp"
+                android:background="#00000000"
+                android:drawableTop="@mipmap/icon41"
+                android:textSize="@dimen/txt_size_twelve"
+                android:gravity="center|bottom"
+                android:text="单一来源公示"
+                android:paddingTop="5dp"
+                />
+            <RadioButton
+                android:id="@+id/icon5_mainAcitivity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:textColor="@color/tab_1_day"
+                android:paddingBottom="5dp"
+                android:background="#00000000"
+                android:drawableTop="@mipmap/icon_sixteen2x"
+                android:textSize="@dimen/txt_size_twelve"
+                android:gravity="center|bottom"
+                android:text="更多"
+                android:paddingTop="5dp"
+                />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/relative_fragment_lable"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tect_line"
+        android:background="@color/line_color" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/line_qiye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <ImageView
+                android:paddingRight="19dp"
+                android:paddingLeft="46dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toLeftOf="@id/line_text"
+                android:src="@mipmap/qiye" />
+        <TextView
+            android:id="@+id/title_qyml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="企业名录"
+            android:layout_gravity="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/txt_size_sixteen"
+
+
+           />
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+           android:background="@color/line_color" />
+        <LinearLayout
+            android:id="@+id/line_cpml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="19dp"
+                android:paddingLeft="46dp"
+                android:layout_toLeftOf="@id/line_text"
+                android:src="@mipmap/cpml" />
+        <TextView
+            android:id="@+id/title_cpml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品名录"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/txt_size_sixteen"
+
+            />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/line_color" />
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:id="@+id/line_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_pic_fragment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="3dp"
+                    android:maxLines="1"
+                    android:text="推荐"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/txt_size_eighteen" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看更多"
+                    android:id="@+id/more"
+                    android:layout_marginRight="2dp"
+                    android:textSize="@dimen/txt_size_twelve"
+                    android:textColor="@color/tab_1_day"
+                    />
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/point_entry"
+
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+          </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+
+        android:background="@color/line_color" />
+
+</LinearLayout>

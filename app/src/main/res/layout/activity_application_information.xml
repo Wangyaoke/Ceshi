@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.cgjl_activity.IndustrialParkSettledInActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:id="@+id/top_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/point_back"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请单位信息填写"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_size_nineteen"
+                android:textColor="@color/txt_color_dark" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/top_rel"
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+    <ScrollView
+        android:id="@+id/OnePage_Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="15dp">
+
+            <include layout="@layout/application_information_onepage"></include>
+        </RelativeLayout>
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/TwoPage_Scroll"
+        android:layout_below="@id/top_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="15dp">
+            <include layout="@layout/application_information_twopage"></include>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

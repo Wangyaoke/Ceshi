@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginLeft="15dp"
+        >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中标信息"
+        android:textSize="15sp"
+        android:textColor="@color/text_black"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+
+        android:layout_weight="1"
+        />
+        <ImageView
+            android:id="@+id/iv_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/full"
+          android:layout_gravity="bottom"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/qyml_table_top"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:id="@+id/table_yz"
+            android:text="项目信息"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:textColor="@color/txt_color_dark"
+            android:background="@drawable/shape_table_top"
+           />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/table_project"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="相关机构"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:background="@drawable/shape_table_top"
+            android:textColor="@color/txt_color_dark" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/table_result"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:text="相关单位"
+            android:gravity="center"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:textColor="@color/txt_color_dark"
+            android:background="@drawable/shape_table_top"
+            />
+        <TextView
+            android:id="@+id/table_money"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:textColor="@color/txt_color_dark"
+            android:background="@drawable/shape_table_top"
+            android:visibility="gone"
+            />
+        </LinearLayout>
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/xrefreshView_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginLeft="15dp"
+            />
+    </com.andview.refreshview.XRefreshView>
+
+</LinearLayout>

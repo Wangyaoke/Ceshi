@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/parent">
+    <include layout="@layout/second_view_top2" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:background="#F8F9FB"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linr_apply"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="申请开票"
+            android:textSize="@dimen/txt_size_fifteen"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_black"/>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/mine_black_point"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:background="#F8F9FB"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_history"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开票历史"
+            android:textSize="@dimen/txt_size_fifteen"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_black"/>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/mine_black_point"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_centerVertical="true"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

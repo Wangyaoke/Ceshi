@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_out"
+        android:layout_width="314dp"
+        android:layout_height="198dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_popwindow_sure">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="是否确认删除"
+                android:textColor="@color/back_dark"
+                android:textSize="@dimen/txt_size_eighteen" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="157dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/back_dark"
+            android:textSize="@dimen/txt_size_eighteen" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="157dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/back_dark"
+            android:textSize="@dimen/txt_size_eighteen" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/tv_cancel"
+            android:background="#c8c8c8" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#c8c8c8" />
+
+    </RelativeLayout>
+</RelativeLayout>

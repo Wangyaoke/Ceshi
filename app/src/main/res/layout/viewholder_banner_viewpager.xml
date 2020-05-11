@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    >
+
+    <com.ansiyida.cgjl.view.RecyclerBanner
+        android:id="@+id/viewpager_bannerViewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/viewpager_bannerViewHolder"
+        android:layout_marginTop="-1dp"
+        android:background="@color/line_color" />
+    <TextView
+        android:id="@+id/tv_imgNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_thirteen"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

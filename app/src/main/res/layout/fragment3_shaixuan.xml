@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="15dp">
+            <ImageView
+                android:id="@+id/point_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/point_back"
+                android:background="#00000000"/>
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:layout_gravity="center_vertical">
+                <EditText
+                    android:id="@+id/edittext_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textCursorDrawable="@drawable/shape_edittext"
+                    android:cursorVisible="false"
+                    android:background="@drawable/shape_search_bg"
+                    android:hint="输入关键字,如采购业,多个词用空格隔开"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="45dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/txt_color_day"
+                    android:textColorHint="#9b9d9d"
+                    android:textSize="12sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:src="@mipmap/icon_search" />
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@id/edittext_search"
+                    android:src="@mipmap/frag1_icon_delete"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/shaixuan"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="筛选"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/type_lin"
+                android:layout_below="@id/search_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="6dp">
+                    <TextView
+                        android:id="@+id/search_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜标题"
+                        android:textSize="16sp"
+                        android:textColor="@color/area_btn_textcolor"
+                        android:gravity="center"
+                        android:layout_marginRight="22dp"/>
+                    <TextView
+                        android:id="@+id/search_full"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜全文"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_marginRight="22dp"
+                        android:textColor="#666666"/>
+                    <TextView
+                        android:id="@+id/search_cgxq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="采购需求"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_marginRight="22dp"
+                        android:textColor="#666666"/>
+                    <TextView
+                        android:id="@+id/search_smcg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="涉密采购"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:textColor="#666666"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#F8F9FB"/>
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/xrefreshView">
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/P_search_recyclerView"/>
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            </LinearLayout>
+
+            <!-- 选择地区-->
+            <ScrollView
+                android:id="@+id/scrollView_visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/search_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/search_ranking"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/txt_size_sixteen" />
+
+                    <com.ansiyida.cgjl.view.MyGridView
+                        android:id="@+id/gridViewBottom_fragment3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:horizontalSpacing="0dp"
+                        android:numColumns="4"
+                        android:visibility="gone" />
+
+                    <com.ansiyida.cgjl.view.FlowViewGroup
+                        android:id="@+id/flowlayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="@string/search_text"
+                            android:textColor="@color/black_gray"
+                            android:textSize="@dimen/txt_size_sixteen" />
+
+
+                        <ImageView
+                            android:id="@+id/delete_fragment3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="16dp"
+                            android:src="@mipmap/search_delete"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <com.ansiyida.cgjl.view.FlowViewGroup
+                        android:id="@+id/flowlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp" />
+
+
+                    <com.ansiyida.cgjl.view.MyGridView
+                        android:id="@+id/gridViewTop_fragment3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="2dp"
+                        android:numColumns="6"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/relative_fragment_lable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+               >
+                <ImageView
+                    android:id="@+id/iv_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_empty"
+                    android:layout_centerHorizontal="true"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_txt_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂时没有记录"
+                    android:textColor="@color/gray_dan"
+                    android:textSize="@dimen/txt_size_fifteen"
+                    android:layout_below="@id/iv_empty"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <ImageView
+                    android:id="@+id/iv_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_repeat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="140dp"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/no_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/search_view"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="目前您还没搜索"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ansiyida.cgjl.activity.MineTabActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/subscribe_item_disabled_bg_day"
+
+        >
+        <include
+            layout="@layout/second_view_top"
+            />
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           >
+           <EditText
+               android:id="@+id/editText"
+               android:layout_width="match_parent"
+               android:layout_height="48dp"
+               android:hint="没有找到合适的兴趣标签？试试直接写一下！"
+               android:textSize="@dimen/txt_size_fifteen"
+               android:paddingLeft="15dp"
+               android:layout_marginTop="1dp"
+               android:background="@color/white"
+               android:layout_marginBottom="1dp"
+               />
+           <TextView
+               android:id="@+id/submit"
+               android:layout_width="72dp"
+               android:layout_height="29dp"
+               android:text="提交"
+               android:clickable="true"
+               android:textColor="@color/tab_2_day"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:background="@drawable/shape_submit"
+               android:layout_marginRight="14dp"
+               android:gravity="center"
+               />
+       </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+            <!--<include-->
+            <!--android:id="@+id/include"-->
+            <!--layout="@layout/layout_top"-->
+            <!-- -->
+            <!--/>-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:id="@+id/subscribe_main_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:paddingBottom="14.0dip" >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="bottom"
+                        >
+
+                        <TextView
+                            android:id="@+id/my_category_text"
+                            style="@style/subscribe_my_tip_text"
+                            android:layout_marginLeft="9dp"
+                            android:textColor="@color/txt_color_day"
+                            android:text="我的兴趣" />
+
+                        <TextView
+                            android:id="@+id/my_category_tip_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12.0dip"
+                            android:text="@string/subscribe_manager_category_info_2"
+                            android:visibility="gone"
+                            android:textSize="11sp" />
+                        <TextView
+                            android:id="@+id/finish_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tab_edit2"
+                            android:textColor="@color/gray_dan"
+                            android:textSize="@dimen/txt_size_fourteen"
+                            android:padding="5dp"
+                            android:layout_gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_horizontal"
+                            android:layout_marginRight="15dp"
+
+                            android:clickable="true"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/seperate_line"
+                        style="@style/subscribe_seperate_line"
+                        android:visibility="gone"
+                        />
+
+                    <com.ansiyida.cgjl.tab.DragGrid
+                        android:id="@+id/userGridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dip"
+                        android:layout_marginLeft="14dip"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="14dip"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="4"
+                        android:scrollbars="vertical"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="14.0px" />
+
+                    <View
+                        android:id="@+id/seperate_line2"
+                        style="@style/subscribe_seperate_line"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/more_category_text"
+                        style="@style/subscribe_more_tip_text"
+                        android:layout_marginBottom="14.0dp"
+                        android:layout_marginLeft="18dp"
+                        android:text="推荐标签"
+                        android:textColor="@color/txt_color_day"
+                        android:layout_marginTop="12dp"
+                        />
+
+
+                    <com.ansiyida.cgjl.tab.OtherGridView
+                        android:id="@+id/otherGridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dip"
+                        android:layout_marginRight="14dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="14dip"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="4"
+                        android:scrollbars="vertical"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="14.0px" />
+                </LinearLayout>
+            </ScrollView>
+            <include
+                android:id="@+id/category_layout"
+                layout="@layout/subscribe_category_item"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

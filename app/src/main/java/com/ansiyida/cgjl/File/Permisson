@@ -1,0 +1,16 @@
+   permissionUtil.requestPermissions(new String[]{Manifest.permission.CAMERA,Manifest.permission.RECORD_AUDIO,Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.WRITE_SETTINGS}, new PermissionListener() {
+                    @Override
+                    public void onGranted() {
+                        doHomework();
+                    }
+
+                    @Override
+                    public void onDenied(List<String> deniedPermission) {
+                        UiUtils.showToast("denied");
+                    }
+
+                    @Override
+                    public void onShouldShowRationale(List<String> deniedPermission) {
+                        doHomework();
+                    }
+                });

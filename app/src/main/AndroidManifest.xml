@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ansiyida.cgjl">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.day">
+        <activity android:name=".activity.cgjl_activity.SecretProcurementActivity"></activity>
+        <activity android:name=".activity.cgjl_activity.ProjectFollowUpActivity" />
+        <activity android:name=".activity.cgjl_activity.PurchaseBigDataActivity" />
+        <activity android:name=".activity.cgjl_activity.EnterpriseBigDataActivity" />
+        <activity android:name=".activity.cgjl_activity.BigDataListActivity" />
+        <activity android:name=".activity.cgjl_activity.ProjectInformationActivity" />
+        <activity android:name=".activity.cgjl_activity.PolicyNewsDetailActivity" />
+        <activity android:name=".activity.cgjl_activity.IntrodusiralParkAuditDetailActivity" />
+        <activity
+            android:name=".activity.cgjl_activity.IndustrialShopCommunicateActivity"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.cgjl_activity.IndustrialShopActivity" />
+        <activity android:name=".activity.cgjl_activity.IndustrialParkShopDetailActivity" />
+        <activity android:name=".activity.cgjl_activity.IndustrialParkAuditCenterActivity" />
+        <activity
+            android:name=".activity.cgjl_activity.IndustrialParkSettledInActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".activity.cgjl_activity.IndustrialParkDetailActivity" />
+        <activity android:name=".activity.cgjl_activity.PurchaseSearchActivity" />
+        <activity android:name=".activity.cgjl_activity.AuditCenterActivity" />
+        <activity
+            android:name=".activity.cgjl_activity.EnterprisesRecommendoneselfActivity"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.cgjl_activity.KnowledgeSearchActivity" />
+        <activity android:name=".activity.cgjl_activity.KnowledgeDetailActivity" />
+        <activity android:name=".activity.cgjl_activity.CgjlMore_Activity" /> <!-- 腾讯bugly -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- 配置APP版本号 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppTheme.StartingWindowTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="mingriqingbao"
+                    android:path="/openapp"
+                    android:port="8888"
+                    android:scheme="mrqb" />
+            </intent-filter>
+        </activity> <!-- 配置APP渠道号 -->
+        <activity android:name=".activity.SearchActivity" /> <!-- 配置Bugly调试模式（true或者false） -->
+        <activity android:name=".activity.WebActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity> <!-- 多渠道动态打包 -->
+        <activity android:name=".activity.AddItemActivity" />
+        <activity
+            android:name=".tab.ChannelActivity"
+            android:theme="@style/translucent" />
+        <activity android:name=".activity.bidding_class_activity" />
+        <activity android:name=".activity.InvoivedetalAvtivity" />
+        <activity android:name=".activity.dy_add_layout" />
+        <activity android:name=".activity.ClassifiedActivity" />
+        <activity android:name=".activity.CG_dy_Activity" />
+        <activity android:name=".activity.CitylocationActivity" />
+        <activity android:name=".activity.ClassifiedActivity1" />
+        <activity android:name=".activity.bidding_class_activity1" /> <!-- android:theme="@style/MyDialogActivityStyle" -->
+        <activity android:name=".activity.PhotoBigActivity" />
+        <activity android:name=".activity.activity_Fragment2" />
+        <activity android:name=".activity.InvoivedetaillistAvtivity" />
+        <activity android:name=".activity.EditActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.MineTabActivity" />
+        <activity android:name=".activity.PrivacyActivity" />
+        <activity android:name=".activity.ChangePhoneActivity" />
+        <activity android:name=".activity.BindPhoneActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <activity
+            android:name=".activity.ApplyInvoiveAvtivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.UserFeedbackActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.CollegeActivity" />
+        <activity android:name=".activity.HistoryActivity" />
+        <activity android:name=".activity.CollectActivity" />
+        <activity android:name=".activity.BuyHistoryActivity" />
+        <activity android:name=".activity.BuyInvoiveAvtivity" />
+        <activity android:name=".activity.BuyInvoiveNoteAvtivity" />
+        <activity android:name=".activity.BuyInvoiveHistoryAvtivity" />
+        <activity android:name=".activity.BuyInvoiveApllyAvtivity" />
+        <activity android:name=".activity.yztable_scape_activity" />
+        <activity android:name=".activity.qytable_scape_activity" />
+        <activity
+            android:name=".activity.recom_self_activity"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.VideoDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.NewsDetailsActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.Activity_law" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ForgetPasswordActivity" />
+        <activity android:name=".activity.RegisterSecondActivity" />
+        <activity android:name=".activity.PhotoDetailsActivity" />
+        <activity android:name=".activity.ReportActivity" />
+        <activity android:name=".activity.YanTaoActivity" />
+        <activity android:name=".activity.FansActivity" />
+        <activity android:name=".activity.CareActivity" />
+        <activity android:name=".activity.PersonalDynamicActivity" />
+        <activity android:name=".activity.FriendDynamicActivity" />
+        <activity android:name=".activity.CommentActivity" />
+        <activity android:name=".activity.ForgetPasswordSecondActivity" />
+        <activity
+            android:name=".activity.dy_setting_layout"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.OpinionActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".activity.YanTaoSendActivity" />
+        <activity
+            android:name=".city.provinceList"
+            android:label="更多选项" />
+        <activity
+            android:name=".city.cityList"
+            android:label="城 市 选 择" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" /> <!-- 微信 -->
+        <activity android:name=".activity.InvitationActivity" /> <!-- 微博 -->
+        <activity android:name=".activity.InterstingTabActivity" />
+        <activity android:name=".activity.CoverActivity" />
+        <activity android:name=".activity.GuideActivity" />
+        <activity android:name=".activity.SubscribeActivity" /> <!-- QQ -->
+        <activity android:name=".activity.DYDetailsActivity" />
+        <activity android:name=".activity.MyDYActivity" /> <!-- 分享编辑页 -->
+        <activity android:name=".activity.BuyvipActivity" />
+        <activity android:name=".activity.keywod_activity" />
+        <activity android:name=".activity.cgxq_activity" />
+        <activity android:name=".activity.VisistedActivity" />
+        <activity android:name=".activity.qyml_activity" />
+        <activity android:name=".activity.cpml_activity" />
+        <activity android:name=".activity.qyml1_activity" />
+        <activity android:name=".activity.yzfx_activity" />
+        <activity android:name=".activity.qymldetail_activity" />
+        <activity
+            android:name=".activity.cgjl_activity.IndustrialParkActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="fc4b356844" />
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1.3" />
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="myChannel" />
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+        <meta-data
+            android:name="APP_CHANNEL"
+            android:value="${APP_CHANNEL_VALUE}" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5bfca249b465f59168000322" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="APP-AN-SAMSUNG" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="1ae0bf1ac6c042d2da5702d438c77406" />
+    </application>
+    <uses-permission android:name="ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" /> <!-- 必须的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 推荐的权限 -->
+    <!-- 添加如下权限，以便使用更多的第三方SDK和更精准的统计数据 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+</manifest>

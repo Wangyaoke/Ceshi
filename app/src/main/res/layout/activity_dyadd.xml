@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.HistoryActivity"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/point_back"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页面标题"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/txt_size_seventeen"
+            android:textColor="@color/txt_color_day"
+
+            />
+        <TextView
+            android:id="@+id/text_putOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="发布"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:layout_alignParentRight="true"
+            android:paddingTop="11dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/tab_2_day"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/F8F8F8"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/obtain_yanZheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:text="请选择订阅的信息种类"
+                android:textColor="@color/black_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flod_zc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dip_blue1"
+                android:layout_width="3dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_blue_radio"
+                android:textSize="16sp"
+
+
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:text="招采信息"
+                android:textColor="@color/text_black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/folded1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="展开"
+                android:textColor="@color/black_gray"
+                android:textSize="15sp"
+
+
+                />
+
+            <ImageView
+                android:id="@+id/zcxx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_down_default"
+                android:textSize="@dimen/txt_size_fourteen"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zcxx_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editText_dy_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="订阅名称"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp"
+                    android:typeface="serif" />
+
+                <com.ansiyida.cgjl.view.CursorEditText
+                    android:textCursorDrawable="@drawable/shape_edittext"
+                    android:id="@+id/editText_dyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/editText_dy_name"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="订阅名称"
+                    android:maxLines="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:paddingRight="15dp"
+
+                    android:singleLine="true"
+                    android:textColor="@color/black_gray"
+                    android:textColorHint="@color/black_gray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <RelativeLayout
+                android:id="@+id/relatout_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editText_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="关键词"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <com.ansiyida.cgjl.view.CursorEditText
+                    android:textCursorDrawable="@drawable/shape_edittext"
+                    android:id="@+id/editText_key1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/editText_key"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="添加关键词"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black_gray"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="15dp"
+                android:text="*最多可添加3个关键词，每词不超过15个字,以空格隔开"
+                android:textColor="#dd471d"
+                android:textSize="10sp"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/relalaout_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editText_passwordAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:text="选择地区"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Text_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toLeftOf="@+id/image_country"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:text="全国"
+                    android:textColor="@color/default_text_night_day"
+
+                    android:textSize="14sp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/image_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/mine_black_point" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <RelativeLayout
+                android:id="@+id/relalayout_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editText_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="信息类型"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Text_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toLeftOf="@+id/image_type"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="全部"
+                    android:textColor="@color/default_text_night_day"
+
+                    android:textSize="14sp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/image_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/mine_black_point" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <RelativeLayout
+                android:id="@+id/relalaout_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editText_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="来源网站"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Text_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toLeftOf="@+id/image_source"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="全部"
+                    android:textColor="@color/default_text_night_day"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/mine_black_point" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/editText_tuisong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="开启推送"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image_tuisong"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/button_close" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_btn_dy_new"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="确定"
+                android:textColor="@color/text_blue"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+
+            android:background="@color/F8F8F8" />
+
+        <LinearLayout
+            android:id="@+id/flod_cg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dip_blue2"
+                android:layout_width="3dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_blue_radio1"
+                android:textSize="16sp"
+
+
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:text="采购需求"
+                android:textColor="@color/text_black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/folded2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="展开"
+                android:textColor="@color/black_gray"
+                android:textSize="15sp"
+
+
+                />
+
+            <ImageView
+                android:id="@+id/cgxq"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_down_default"
+                android:textSize="@dimen/txt_size_fourteen"
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cgxq_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+           >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editText_cgname_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="订阅名称"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <com.ansiyida.cgjl.view.CursorEditText
+                    android:textCursorDrawable="@drawable/shape_edittext"
+                    android:id="@+id/editText_cgname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/editText_cgname_name"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="订阅名称"
+                    android:maxLines="1"
+                    android:paddingTop="16dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_gray"
+                    android:textColorHint="@color/black_gray"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <RelativeLayout
+                android:id="@+id/relatout_cg_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editText_cg_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="关键词"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <com.ansiyida.cgjl.view.CursorEditText
+                    android:textCursorDrawable="@drawable/shape_edittext"
+                    android:id="@+id/editText_cg_key1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/image_clear_cg3"
+                    android:layout_toRightOf="@+id/editText_cg_key"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="添加关键词"
+                    android:maxLines="1"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_gray"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image_clear_cg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="12dp"
+                    android:src="@mipmap/mine_black_point"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="15dp"
+                android:text="*最多可添加3个关键词，每词不超过15个字,以空格隔开"
+                android:textColor="#dd471d"
+                android:textSize="10sp"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/editText_tuisong_cg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="开启推送"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image_tuisong_cg"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="12dp"
+                    android:src="@mipmap/button_close" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <TextView
+                android:id="@+id/btn_finish_cg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape_btn_dy_new"
+                android:gravity="center"
+                android:paddingTop="13dp"
+                android:paddingBottom="14dp"
+                android:text="确定"
+                android:textColor="@color/text_blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+
+            android:background="@color/F8F8F8" />
+
+        <LinearLayout
+            android:id="@+id/flod_sm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dip_blue3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_blue_radio2"
+                android:gravity="left"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:text="涉密采购"
+                android:textColor="@color/text_black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/folded3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="展开"
+                android:textColor="@color/black_gray"
+                android:textSize="15sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/smcg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_down_default"
+                android:textSize="@dimen/txt_size_fourteen"
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/smcg_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <RelativeLayout
+                android:id="@+id/smcg_name_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/smcg_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="订阅名称"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <com.ansiyida.cgjl.view.CursorEditText
+                    android:textCursorDrawable="@drawable/shape_edittext"
+                    android:id="@+id/smcg_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/smcg_nm"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="订阅名称"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black_gray"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/smcg_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/smcg_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="关键词"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <com.ansiyida.cgjl.view.CursorEditText
+                    android:textCursorDrawable="@drawable/shape_edittext"
+                    android:id="@+id/smcg_key1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/smcg_key"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="添加关键词"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black_gray"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="15dp"
+                android:text="*最多可添加3个关键词，每词不超过15个字,以空格隔开"
+                android:textColor="#dd471d"
+                android:textSize="10sp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/editText_tuisong_sm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="开启涉密采购"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image_tuisong_sm"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="12dp"
+                    android:src="@mipmap/button_close" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/subscribe_item_disabled_bg_day" />
+
+            <TextView
+                android:id="@+id/btn_finish_sm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape_btn_dy_new"
+                android:gravity="center"
+                android:paddingTop="13dp"
+                android:paddingBottom="14dp"
+                android:text="确定"
+                android:textColor="@color/text_blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/subscribe_item_disabled_bg_day" />
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,33 @@
+1.json数据
+               Call<ResponseBody> call = MyApplication.getNetApi().getBannerJson("1", "original", MD5Utils.md5File("1originalzhidian"));
+               call.enqueue(new Callback<ResponseBody>() {
+                    @Override
+                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                        if (response.isSuccessful()) {
+                            try {
+                                String json = response.body().string();
+                                LogUtil.i("json", "json:" + json);
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        } else {
+                            LogUtil.i("json", "访问失败1");
+
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+                        LogUtil.i("json", "访问失败2");
+
+                    }
+                });
+
+ 2.Json分割
+
+                            String json = response.body().string();
+                            int length=json.length();
+                            LogUtil.i("json3","json1:"+json.substring(0,length/4));
+                            LogUtil.i("json3","json2:"+json.substring(length/4,2*length/4));
+                            LogUtil.i("json3","json3:"+json.substring(2*length/4,3*length/4));
+                            LogUtil.i("json3","json4:"+json.substring(3*length/4,length));

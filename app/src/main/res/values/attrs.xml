@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="containerBackground" format="reference|color"></attr>
+
+    <attr name="subscribe_item_drag_stroke" format="reference|color"></attr>
+    <attr name="subscribe_item_drag_bg" format="reference|color"></attr>
+    <attr name="subscribe_item_selected_stroke" format="reference|color"></attr>
+    <attr name="subscribe_item_selected_bg" format="reference|color"></attr>
+    <attr name="subscribe_item_disabled_stroke" format="reference|color"></attr>
+    <attr name="subscribe_item_disabled_bg" format="reference|color"></attr>
+    <attr name="subscribe_item_pressed_stroke" format="reference|color"></attr>
+    <attr name="subscribe_item_pressed_bg" format="reference|color"></attr>
+    <attr name="subscribe_item_normal_stroke" format="reference|color"></attr>
+    <attr name="subscribe_item_normal_bg" format="reference|color"></attr>
+    <attr name="default_text" format="reference|color"></attr>
+    <attr name="subscribe_activity_bg" format="reference|color"></attr>
+    <attr name="subscribe_bg" format="reference|color"></attr>
+    <attr name="subscribe_tip_text" format="reference|color"></attr>
+
+
+
+    <attr name="tab_1" format="reference|color"></attr>
+    <attr name="tab_2" format="reference|color"></attr>
+    <attr name="txt_color" format="reference|color"></attr>
+    <declare-styleable name="WheelView">
+        <!--set number of item displayed, default is 3-->
+        <attr name="npv_ShowCount" format="reference|integer" />
+        <!--set if show divider, default is true-->
+        <attr name="npv_ShowDivider" format="reference|boolean" />
+        <attr name="npv_DividerColor" format="reference|color" />
+        <attr name="npv_DividerMarginLeft" format="reference|dimension" />
+        <attr name="npv_DividerMarginRight" format="reference|dimension" />
+        <attr name="npv_DividerHeight" format="reference|dimension" />
+        <attr name="npv_TextColorNormal" format="reference|color" />
+        <attr name="npv_TextColorSelected" format="reference|color" />
+        <attr name="npv_TextColorHint" format="reference|color" />
+        <attr name="npv_TextSizeNormal" format="reference|dimension" />
+        <attr name="npv_TextSizeSelected" format="reference|dimension" />
+        <attr name="npv_TextSizeHint" format="reference|dimension" />
+        <attr name="npv_TextArray" format="reference" />
+        <attr name="npv_MinValue" format="reference|integer" />
+        <attr name="npv_MaxValue" format="reference|integer" />
+        <attr name="npv_WrapSelectorWheel" format="reference|boolean" />
+        <attr name="npv_HintText" format="reference|string" />
+        <attr name="npv_EmptyItemHint" format="reference|string" />
+        <attr name="npv_MarginStartOfHint" format="reference|dimension" />
+        <attr name="npv_MarginEndOfHint" format="reference|dimension" />
+        <attr name="npv_ItemPaddingHorizental" format="reference|dimension" />
+        <attr name="npv_ItemPaddingVertical" format="reference|dimension" />
+
+        <!--just used to measure maxWidth for wrap_content without hint,
+            the string array will never be displayed.
+            you can set this attr if you want to keep the wraped numberpickerview
+            width unchanged when alter the content list-->
+        <attr name="npv_AlternativeTextArrayWithMeasureHint" format="reference" />
+        <attr name="npv_AlternativeTextArrayWithoutMeasureHint" format="reference" />
+        <!--the max length of hint content-->
+        <attr name="npv_AlternativeHint" format="reference|string" />
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="left_to_right" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="GroupDemoView">
+        <attr name="textColor" format="string" />
+    </declare-styleable>
+    <declare-styleable name="VerticalStepView">
+        <attr name="drawableSize" format="dimension" />
+        <attr name="drawableMarginText" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="descriptionTextSize" format="dimension" />
+        <attr name="textColor"  />
+        <attr name="progressLineColor" format="color" />
+        <attr name="descriptionTextColor" format="color" />
+        <attr name="spacing" format="dimension" />
+    </declare-styleable>
+    -<declare-styleable name="VerticalProgress">
+
+    <!-- 默认的背景颜色 -->
+
+
+    <attr name="background_color" format="color"/>
+
+    <!-- 圆点的数量 -->
+
+
+    <attr name="point_count" format="integer"/>
+
+    <!-- 当前到达的位置 -->
+
+
+    <attr name="current_point" format="integer"/>
+
+    <!-- 起始颜色 -->
+
+
+    <attr name="start_color" format="color"/>
+
+    <!-- 结束颜色 -->
+
+
+    <attr name="end_color" format="color"/>
+
+    <!-- 圆点的半径 -->
+
+
+    <attr name="point_radius" format="dimension"/>
+
+</declare-styleable>
+    <declare-styleable name="CornerFlagView">
+        <!--文本大小-->
+        <attr name="cfv_textSize" format="dimension"/>
+        <!--文本内容-->
+        <attr name="cfv_textContent" format="string"/>
+        <!--文本颜色-->
+        <attr name="cfv_textColor" format="color"/>
+        <!--背景颜色-->
+        <attr name="cfv_backgroundColor" format="color"/>
+        <!--阴影是否占满上角-->
+        <attr name="cfv_fullCorner" format="boolean"/>
+        <!--倾斜放向-->
+        <attr name="cfv_orientation" format="enum">
+            <!--右角标，向左侧倾斜-->
+            <enum name="right" value="0"/>
+            <!--左角标，向右侧倾斜-->
+            <enum name="left" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="chartView">
+        <attr name="xylinecolor" />
+        <attr name="xylinewidth" />
+        <attr name="xytextcolor" />
+        <attr name="xytextsize" />
+        <attr name="linecolor" />
+        <attr name="interval" />
+        <attr name="bgcolor" />
+        <attr name="isScroll" />
+    </declare-styleable>
+
+    <declare-styleable name="AndroidJgraph">
+        <attr name="graphstyle" format="enum">
+            <enum name="bar" value="0"/>
+            <enum name="line" value="1"/>
+        </attr>
+        <attr name="scrollable" format="boolean"/>
+        <attr name="visiblenums" format="integer"/>
+        <attr name="showymsg" format="boolean"/>
+        <attr name="normolcolor" format="color"/>
+        <attr name="activationcolor" format="color"/>
+        <attr name="linestyle" format="enum">
+            <!--折线-->
+            <enum name="broken" value="0"/>
+            <!--曲线-->
+            <enum name="curve" value="1"/>
+        </attr>
+        <attr name="linemode" format="enum">
+            <!--链接每一个点-->
+            <enum name="everypoint" value="1"/>
+            <!--跳过0的点-->
+            <enum name="jump0" value="2"/>
+            <!--跳过的0点用虚线链接-->
+            <enum name="dash0" value="3"/>
+        </attr>
+        <attr name="linewidth" format="dimension"/>
+        <attr name="lineshowstyle" format="enum">
+            <enum name="drawing" value="0"/>
+            <enum name="section" value="1"/>
+            <enum name="fromline" value="2"/>
+            <enum name="fromcorner" value="3"/>
+            <enum name="aswave" value="4"/>
+        </attr>
+    </declare-styleable>
+</resources>

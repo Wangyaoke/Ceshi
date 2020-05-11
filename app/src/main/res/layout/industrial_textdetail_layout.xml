@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:id="@+id/ZCYH_title"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="政策优惠"
+        android:textColor="@color/back_dark"
+        android:textSize="@dimen/txt_size_sixteen"/>
+    <View
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ZCYH_VIEW"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/ZCYH_title"
+        android:layout_width="30dp"
+        android:layout_height="1.5dp"
+        android:background="@color/color_blue"/>
+   <WebView
+       android:id="@+id/webview"
+       android:layout_below="@id/ZCYH_VIEW"
+       android:layout_marginHorizontal="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"></WebView>
+</RelativeLayout>

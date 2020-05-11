@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.cgjl_activity.AuditCenterActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingTop="5dp">
+    <include layout="@layout/second_view_top"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F8F9FB"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:layout_gravity="center">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/audit_tablelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            app:tabSelectedTextColor="#4E86ED"
+            app:tabIndicatorHeight="2dp"
+            app:tabIndicatorColor="#4E86ED"
+            app:tabMode="scrollable"
+            android:layout_centerHorizontal="true"
+            ></android.support.design.widget.TabLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_below="@id/audit_tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DFDFDF"/>
+        <android.support.v4.view.ViewPager
+            android:layout_below="@id/view"
+            android:layout_marginTop="5dp"
+            android:id="@+id/audit_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </RelativeLayout>
+</LinearLayout>

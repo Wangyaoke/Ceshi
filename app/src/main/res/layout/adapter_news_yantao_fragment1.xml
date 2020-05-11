@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <ImageView
+            android:id="@+id/iv_yanTao"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:background="@mipmap/yt_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            />
+        <TextView
+            android:id="@+id/title_tanTao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刘强东说我脸盲 周鸿祎说我也是：两人对话实录来了"
+            android:textColor="@color/white"
+            android:layout_alignTop="@id/iv_yanTao"
+            android:textSize="@dimen/txt_size_seventeen"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@mipmap/yt_talk_bg"
+            android:paddingTop="10dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_yanTao"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                >
+                <ImageView
+                    android:id="@+id/icon_zan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/yt_zan"
+                    android:layout_marginRight="6dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_zanCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="251"
+                    android:textColor="@color/tab_1_day"
+                    android:textSize="@dimen/txt_size_fourteen"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="100dp"
+                >
+                <ImageView
+                    android:id="@+id/icon_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/yt_talk"
+                    android:layout_marginRight="6dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_optionCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="251"
+                    android:textColor="@color/tab_1_day"
+                    android:textSize="@dimen/txt_size_fourteen"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/icon_college"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/tantao_college2"
+                    android:layout_marginRight="12dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_collegeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收藏 "
+                    android:textColor="@color/tab_2_day"
+                    android:textSize="@dimen/txt_size_twelve"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yt_share"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        android:layout_below="@id/relative"
+        android:layout_marginTop="-1dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        />
+
+</RelativeLayout>

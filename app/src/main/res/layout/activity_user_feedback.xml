@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subscribe_item_disabled_bg_day"
+    tools:context="com.ansiyida.cgjl.activity.UserFeedbackActivity">
+    <include
+        android:id="@+id/include"
+        layout="@layout/second_view_top"/>
+    <EditText
+        android:id="@+id/edit_userFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:background="@color/white"
+        android:layout_below="@id/include"
+        android:layout_marginTop="9dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:hint="@string/str_feedback"
+        android:maxLength="500"
+        android:textSize="@dimen/txt_size_fifteen"
+        android:gravity="top"
+        android:paddingBottom="25dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/edit_userFeedback"
+        android:layout_alignRight="@id/edit_userFeedback"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_editCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/txt_size_fourteen"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/500"
+            android:textSize="@dimen/txt_size_fourteen"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

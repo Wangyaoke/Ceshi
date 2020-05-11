@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4e86ed</color>
+    <color name="colorPrimaryDark">#4e86ed</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_grey">#F5F5F5</color>
+    <color name="font_main">#595959</color>
+    <color name="font_main_p">#F85959</color>
+    <color name="ssqianhui">#F4F5F7</color>
+
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="line_color">#e5e5e5</color>
+
+    <color name="color_blue">#4E86ED</color>
+
+    <color name="color_gray_back">#f8f9fb</color>
+
+    <color name="aa">#97C2EC</color>
+    <!-- 白天模式-->
+    <color name="back_day">#FFFFFF</color>
+    <color name="vip">#e5bb5a</color>
+    <color name="default_text_night_day">#747474</color>
+    <color name="qy_text_night_day">#444444</color>
+    <color name="qy_text_blake">#080808</color>
+    <color name="subscribe_item_text_color_pressed_night_day">#303030</color>
+    <color name="subscribe_item_selected_stroke_night_day">#bc494d</color>
+    <color name="subscribe_item_drag_stroke_day">#d2d2d2</color>
+    <color name="subscribe_item_drag_bg_day">#f5f5f5</color>
+    <color name="subscribe_item_selected_bg_day">#ffffff</color>
+    <color name="subscribe_item_selected_stroke_day">#cc3131</color>
+    <color name="subscribe_item_disabled_stroke_day">#d9d9d9</color>
+    <color name="subscribe_item_pressed_stroke_day">#cdcdcd</color>
+    <color name="subscribe_item_pressed_bg_day">#f9f9f9</color>
+    <color name="subscribe_item_normal_stroke_day">#cdcdcd</color>
+    <color name="subscribe_item_normal_bg_day">#f5f5f5</color>
+    <color name="default_text_day">#454545</color>
+    <color name="subscribe_item_text_color_pressed_day">#b9b9b9</color>
+    <color name="category_subscribe_text_day">#ffffff</color>
+    <color name="drawer_item_bg_day">#5d5d5d</color>
+    <color name="drawer_line_color_day">#444444</color>
+    <color name="title_text_color_day">#ffffff</color>
+    <color name="subscribe_tip_text_day">#2e2e2e</color>
+    <color name="subscribe_activity_bg_day">#efefef</color>
+    <color name="subscribe_bg_day">#f5f5f5</color>
+    <color name="subscribe_seperate_line_day">#cdcdcd</color>
+    <color name="hui">#F1EDED</color>
+    <color name="yellow">#DAC831</color>
+    <color name="ccc">#000000</color>
+
+    <color name="subscribe_item_disabled_bg_day">#f1f1f1</color>
+    <color name="tab_1_day">#686868</color>
+    <color name="tab_2_day">#4e86ed</color>
+    <color name="txt_color_day">#333333</color>
+    <color name="btn_none_click">#c4c4c4</color>
+    <color name="gray_dan">#686868</color>
+    <color name="text_blue">#4E86ED</color>
+    <color name="text_regular">#e49257</color>
+    <color name="text_day">#b3b3b3</color>
+    <color name="btn_click">#4e86ed</color>
+    <color name="black_gray">#999999</color>
+    <color name="text_black">#333333</color>
+    <color name="text_red">#eb3d40</color>
+    <color name="shape_dy_circle">#F4F5F7</color>
+    <color name="text_tile">#999999</color>
+    <color name="area_btn">#EAF1F8</color>
+    <color name="area_btn_textcolor">#438EF5</color>
+    <color name="news_search_time">#BFBFBF</color>
+    <color name="green">#6ADB60</color>
+    <color name="ggreen">#E6F6F1</color>
+    <color name="rred">#FCEBEC</color>
+    <color name="gkggback">#F9F0EA</color>
+    <color name="gkggtext">#F7CAAF</color>
+    <color name="civiText">#D5D9E0</color>
+    <color name="sy_Radiubutton">#FF686868</color>
+    //专业领域字体颜色
+    <color name="F6">#FF666666</color>
+    <color name="F4E86ED">#FF4E86ED</color>
+    //折线图线条颜色
+    <color name="ChartLine">#4698FF</color>
+    <color name="jmrh_zy">#00A9FF</color>
+    <color name="jmrh_jm">#FF9200</color>
+    //页面条形颜色
+    <color name="F8F8F8">#F8F9FB</color>
+    <!-- 夜间模式-->
+    <color name="back_dark">#000000</color>
+    <color name="tab_1_dark">#666666</color>
+    <color name="tab_2_dark">#4e86ed</color>
+    <color name="tab_top">#4e86ee</color>
+    <color name="txt_color_dark">#333333</color>
+
+</resources>

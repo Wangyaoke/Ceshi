@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="26dp"
+    android:orientation="vertical">
+
+    <!--<fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard-->
+    <!--android:id="@+id/player_list_video"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="220dp" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp">
+        <ImageView
+            android:id="@+id/point_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:src="@mipmap/back"
+            android:background="#00000000"/>
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white"
+
+            >
+
+
+            <EditText
+                android:id="@+id/edittext_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:background="@drawable/shape_search_bg"
+                android:hint="搜索关键词"
+                android:paddingLeft="35dp"
+                android:paddingRight="45dp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/txt_color_day"
+                android:textColorHint="@color/black_gray"
+                android:textSize="@dimen/txt_size_fifteen" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:paddingLeft="1dp"
+                android:paddingRight="5dp"
+
+                android:src="@mipmap/icon_search" />
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_centerVertical="true"
+
+                android:layout_alignRight="@id/edittext_search"
+                android:src="@mipmap/frag1_icon_delete" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        android:layout_marginTop="10dp"
+        />
+    <ScrollView
+        android:id="@+id/scrollView_visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/subscribe_item_disabled_bg_day"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/subscribe_item_disabled_bg_day"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/search_ranking"
+                android:textColor="@color/black_gray"
+                android:textSize="@dimen/txt_size_sixteen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/subscribe_item_disabled_bg_day"
+                android:visibility="gone"
+                />
+
+            <com.ansiyida.cgjl.view.MyGridView
+                android:id="@+id/gridViewBottom_fragment3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="0dp"
+                android:numColumns="4" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/serch_RelativeLayout">
+                <TextView
+                    android:id="@+id/tv_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/search_text"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/txt_size_sixteen" />
+
+                <ImageView
+                    android:id="@+id/search_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/tv_txt"
+                    android:padding="10dp"
+                    android:src="@mipmap/point_up" />
+
+                <ImageView
+                    android:id="@+id/delete_fragment3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:src="@mipmap/search_delete" />
+            </RelativeLayout>
+            <com.ansiyida.cgjl.view.MyGridView
+                android:id="@+id/gridViewTop_fragment3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="12dp"
+                android:numColumns="4" />
+        </LinearLayout>
+
+    </ScrollView>
+      <RelativeLayout
+        android:id="@+id/relative_fragment_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <com.andview.refreshview.XRefreshView
+            android:id="@+id/xrefreshView_spinner_zb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_spinner_zb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.andview.refreshview.XRefreshView>
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/iv_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_repeat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

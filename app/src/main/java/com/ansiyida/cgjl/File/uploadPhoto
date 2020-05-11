@@ -1,0 +1,20 @@
+                File file1=new File(Constant.picPath+"touxiang.jpg");
+                RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file1);
+        2、创建MultipartBody.Part，其中需要注意第一个参数需要与服务器对应
+                MultipartBody.Part part = MultipartBody.Part.createFormData("uploadfile", file1.getName(), requestFile);
+                MyApplication.getNetApi().updateImage(part).enqueue(new Callback<String>() {
+                    @Override
+                    public void onResponse(Call<String> call, Response<String> response) {
+                        ToastUtils.showMessage(EditActivity.this, "发送成功");
+                        bitmap.recycle();
+                        bitmap= BitmapFactory.decodeFile(Constant.picPath+"touxiang.jpg");
+                        image_touxiang.setImageBitmap(bitmap);
+                    }
+
+                   @Override
+                    public void onFailure(Call<String> call, Throwable t) {
+                        ToastUtils.showMessage(EditActivity.this, "发送成功");
+                        LogUtil.i("erro","msg:"+t.toString());
+
+                    }
+                });

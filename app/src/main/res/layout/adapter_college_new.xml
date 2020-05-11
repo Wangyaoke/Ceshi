@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relative_top"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:background="@color/subscribe_item_disabled_bg_day">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/txt_size_fifteen" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_new"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_below="@id/relative_top"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/select_collegeNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/selector_college_select"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/newBody_collegeNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="103dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/select_collegeNew"
+            android:text=""
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="@color/txt_color_day"
+            android:textSize="@dimen/txt_size_fifteen" />
+
+        <ImageView
+            android:id="@+id/newImage_collegeNew"
+            android:layout_width="87dp"
+            android:layout_height="57dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/subscribe_item_disabled_bg_day" />
+
+        <TextView
+            android:id="@+id/tv_videoTime"
+            android:layout_width="29dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@id/newImage_collegeNew"
+            android:layout_alignRight="@id/newImage_collegeNew"
+            android:background="@drawable/shape_bg_pic_num"
+            android:gravity="center"
+            android:text="03:11"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_nine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/subscribe_item_disabled_bg_day" />
+    </RelativeLayout>
+</RelativeLayout>

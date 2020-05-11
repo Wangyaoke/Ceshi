@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="5dp">
+    <RelativeLayout
+        android:id="@+id/bigdata_rel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bigdatalist_b_shadow">
+        <ImageView
+            android:id="@+id/bigdata_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:background="@mipmap/icon_placeholder"/>
+    </RelativeLayout>
+</RelativeLayout>

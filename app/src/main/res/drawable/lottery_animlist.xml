@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:drawable="@drawable/ok0"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok1"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok2"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok3"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok4"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok5"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok6"
+    android:duration="100" />
+    <item
+        android:drawable="@drawable/ok7"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok8"
+        android:duration="100" />
+
+    <item
+        android:drawable="@drawable/ok9"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok10"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok11"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok12"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok13"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok14"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok15"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok16"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ok17"
+        android:duration="100" />
+
+    <item
+        android:drawable="@drawable/ok18"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/ok19"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/ok20"
+        android:duration="200" />
+</animation-list>

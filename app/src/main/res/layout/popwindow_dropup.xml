@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+        <Button
+            android:id="@+id/paiZhao_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:textSize="@dimen/txt_size_seventeen"
+            android:background="@drawable/shape_photo_top"
+            android:textColor="@color/color_blue"
+            style="?android:attr/borderlessButtonStyle"  />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/subscribe_item_disabled_bg_day"
+            />
+        <Button
+            android:id="@+id/xiangCe_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_seventeen"
+            android:text="从相册选择"
+            android:textColor="@color/color_blue"
+            android:background="@drawable/shape_photo_center"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="取消"
+            android:textSize="@dimen/txt_size_seventeen"
+            android:background="@drawable/shape_photo_bottom"
+            android:textColor="@color/color_blue"
+            style="?android:attr/borderlessButtonStyle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="9dp" />
+    </LinearLayout>
+</RelativeLayout>

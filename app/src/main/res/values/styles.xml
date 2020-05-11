@@ -1,0 +1,178 @@
+<resources>
+
+    <declare-styleable name="LeanTextView">
+        <attr name="degree" format="dimension" />
+    </declare-styleable>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="BottomDialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="loadAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_right_in</item>
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+    </style>
+    <style name="load_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/loadAnim</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.05</item>
+    </style>
+
+    <style name="AppTheme.day" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="containerBackground">@color/back_day</item>
+        <item name="subscribe_item_drag_stroke">@color/subscribe_item_drag_stroke_day</item>
+        <item name="subscribe_item_drag_bg">@color/subscribe_item_drag_bg_day</item>
+        <item name="subscribe_item_selected_stroke">@color/subscribe_item_selected_stroke_day</item>
+        <item name="subscribe_item_selected_bg">@color/subscribe_item_selected_bg_day</item>
+        <item name="subscribe_item_disabled_stroke">@color/subscribe_item_disabled_stroke_day</item>
+        <item name="subscribe_item_disabled_bg">@color/subscribe_item_disabled_bg_day</item>
+        <item name="subscribe_item_pressed_stroke">@color/subscribe_item_pressed_stroke_day</item>
+        <item name="subscribe_item_pressed_bg">@color/subscribe_item_pressed_bg_day</item>
+        <item name="subscribe_item_normal_stroke">@color/subscribe_item_normal_stroke_day</item>
+        <item name="subscribe_item_normal_bg">@color/subscribe_item_normal_bg_day</item>
+        <item name="default_text">@color/default_text_day</item>
+        <item name="subscribe_activity_bg">@color/subscribe_activity_bg_day</item>
+        <item name="subscribe_bg">@color/subscribe_bg_day</item>
+        <item name="subscribe_tip_text">@color/subscribe_tip_text_day</item>
+
+
+        <item name="tab_1">@color/tab_1_day</item>
+        <item name="tab_2">@color/tab_2_day</item>
+        <item name="txt_color">@color/txt_color_day</item>
+
+    </style>
+
+    <!-- 夜间模式 -->
+    <style name="AppTheme.night" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="containerBackground">@color/back_dark</item>
+
+        <item name="subscribe_item_drag_stroke">@color/subscribe_item_drag_stroke_day</item>
+        <item name="subscribe_item_drag_bg">@color/subscribe_item_drag_bg_day</item>
+        <item name="subscribe_item_selected_stroke">@color/subscribe_item_selected_stroke_day</item>
+        <item name="subscribe_item_selected_bg">@color/subscribe_item_selected_bg_day</item>
+        <item name="subscribe_item_disabled_stroke">@color/subscribe_item_disabled_stroke_day</item>
+        <item name="subscribe_item_disabled_bg">@color/subscribe_item_disabled_bg_day</item>
+        <item name="subscribe_item_pressed_stroke">@color/subscribe_item_pressed_stroke_day</item>
+        <item name="subscribe_item_pressed_bg">@color/subscribe_item_pressed_bg_day</item>
+        <item name="subscribe_item_normal_stroke">@color/subscribe_item_normal_stroke_day</item>
+        <item name="subscribe_item_normal_bg">@color/subscribe_item_normal_bg_day</item>
+        <item name="default_text">@color/default_text_day</item>
+        <item name="subscribe_activity_bg">@color/subscribe_activity_bg_day</item>
+        <item name="subscribe_bg">@color/subscribe_bg_day</item>
+        <item name="subscribe_tip_text">@color/subscribe_tip_text_day</item>
+
+
+        <item name="tab_1">@color/tab_1_dark</item>
+        <item name="tab_2">@color/tab_2_dark</item>
+        <item name="txt_color">@color/txt_color_dark</item>
+
+    </style>
+
+    <style name="dialogstyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/anim_dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/anim_dialog_out</item>
+    </style>
+
+
+    <style name="subscribe_my_tip_text">
+        <item name="android:textSize">@dimen/txt_size_sixteen</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="subscribe_seperate_line">
+        <item name="android:background">@color/subscribe_seperate_line_day</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:layout_marginTop">14.0dip</item>
+        <item name="android:layout_marginBottom">14.0dip</item>
+    </style>
+    <style name="subscribe_more_tip_text" parent="@style/subscribe_my_tip_text">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+
+    <!-- 日间模式，透明 -->
+    <style name="AppTheme.day.transparent" parent="AppTheme.day">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- 夜间模式 ，透明-->
+    <style name="AppTheme.night.transparent" parent="AppTheme.night">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MyDialogActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@anim/anim_top_to_bottom</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="inputDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+
+        <item name="android:windowBackground">@color/font_main</item>
+        <!--背景-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无边框-->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowSoftInputMode">stateAlwaysVisible</item>
+        <!--显示软件盘-->
+
+    </style>
+    <!--对话框弹出window背景变暗-->
+    <style name="Dialog" parent="Base.Animation.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--对话框从下向上弹出动画-->
+    <style name="Dialog.Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+    <style name="Comment_Dialog" parent="@style/AppTheme" type="text/css"><item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateAlwaysVisible</item><!--显示软件盘-->
+        <item name="android:backgroundDimAmount">0.5</item></style>
+
+    <!-- 应用启动页(StartingWindow)的theme -->
+    <style name="AppTheme.StartingWindowTheme" parent="AppTheme">
+        <!-- 可以设置成纯颜色（设置一个和Activity UI相似的背景） -->
+        <!--<item name="android:windowBackground">@color/colorPrimary</item>-->
+        <!--也可以设置成一张图片 -->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <!--TabLayout字体大小-->
+    <style name="TabLayoutTextStyle"  parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+</resources>

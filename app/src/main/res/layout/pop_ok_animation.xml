@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_photo_bottom"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/pop_ok_image80"
+            android:layout_width="108dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/pop_ok_image"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/text_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="提交成功"
+            android:textColor="@color/txt_color_dark"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/pop_textLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请前往个人中心 " />
+            <TextView
+                android:id="@+id/go_AuditCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审核中心"
+                android:textColor="@color/tab_2_dark"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pop_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:text="中查看审核进度" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/dismiss_pop_ok"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_edit_cancle_white"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:id="@+id/qyml_table_top"
+        >
+        <TextView
+            android:layout_width="238dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/table_project"
+            android:text="项目"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:textColor="@color/txt_color_dark"
+            android:background="@drawable/shape_table_content"
+           />
+        <TextView
+            android:id="@+id/table_money"
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="金额"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:background="@drawable/shape_table_content"
+            android:textColor="@color/txt_color_dark"
+           />
+        <TextView
+            android:id="@+id/table_bidding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="dddddddddddddddddddddddddddddddddddd"
+            android:textSize="@dimen/txt_size_fourteen"
+            android:background="@drawable/shape_table_content"
+            android:textColor="@color/txt_color_dark"
+            />
+
+
+
+
+</LinearLayout>
